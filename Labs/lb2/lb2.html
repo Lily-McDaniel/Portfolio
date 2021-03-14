@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="FaviconL.png"> <!-- How to add a Favicon-->
+    <title>LAB 2</title>
+    <style>
+      body {
+        font-family: serif;
+        }
+
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+        }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+        }
+      p {
+        width: 33.33%;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body style="background-color: ghostwhite">
+    <!--Click to open nav bar-->
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+    <!--Slide bar with links to portfolio-->
+     <div id="mySidenav" class="sidenav">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <a href="../../index_v3.html#top">Portfolio</a>
+       <a href="../../index_v3.html#fProjects">Projects</a>
+       <a href="../../index_v3.html#fLabs">Labs</a>
+       <a href="../../index_v3.html#contact">Contact</a>
+     </div>
+  <center>
+    <h1>CUNY QCC Software Eng. Micro-Credential Cohort 2</h1>
+    <h2>Lab 2 Inserting Images</h2>
+    <h3>Absolute path v. Relative path</h3>
+    <h4>February 10th, 2021</h4>
+    <h2>Lily McDaniel</h2><br>
+      <h3>Clickable Picture</h3>
+        <a href="https://www.linkedin.com/in/lily-mcdaniel-672a1910b/">  <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFvKmgXc3Y08g/profile-displayphoto-shrink_800_800/0/1576138102670?e=1618444800&v=beta&t=QpTrZFHvjScfL-M3AzfAsKgbaNToUH7RIj-jkYuKGJ0" alt="Lily McDaniel" width="200px"></a><br>
+      <h3>Clickable Words</h3>
+        <a href="https://www.linkedin.com/in/lily-mcdaniel-672a1910b/">Connect with me!</a> <br>
+
+      <h3>Relative Path</h3>
+        <a href="https://www.rd.com/wp-content/uploads/2019/04/14-Hilarious-Dog-Memes.jpg"> <img src="https://www.rd.com/wp-content/uploads/2019/04/14-Hilarious-Dog-Memes.jpg" width="150px" alt="Funny dog"></a><br>
+      <h3>Absolute Path</h3>
+       <a href="Dog.jpg"> <img src="Dog.jpg" width="150px"></a>
+
+      <h3>Goals</h3>
+        <p> Goal 1: To <em> learn </em> and <em> create </em> <b> interesting </b> projects with Python </p>
+        <p> Goal 2: <i> Find </i> a career that I really <strong> love </strong> and <strong> enjoy </strong> </p>
+        <p> Goal 3: <i> Invest </i> and <i> save </i> my money <b> wisely </b> </p><br>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+     </script>
+   </center>
+  </body>
+</html>
