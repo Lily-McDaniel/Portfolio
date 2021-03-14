@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="../FaviconL.png"> <!-- How to add a Favicon-->
+    <link rel="stylesheet" type="text/css" href="p3.css">
+    <title>Project 3</title>
+  </head>
+    <body>
+      <div class="header">
+        <!--Click to open nav bar-->
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+        <!--Slide bar with links to portfolio-->
+         <div id="mySidenav" class="sidenav">
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+           <a href="../../index_v3.html#top">Portfolio</a>
+           <a href="../../index_v3.html#fProjects">Projects</a>
+           <a href="../../index_v3.html#fLabs">Labs</a>
+           <a href="../../index_v3.html#contact">Contact</a>
+         </div>
+        <center>
+          <h1>Whack-A-Mole</h1>
+          <h2>Lily McDaniel</h2>
+          <span class="score">0</span>
+          <button onClick="startGame()">Start</button>
+        </div>
+
+      <div class="game">
+        <div class="hole hole1">
+          <div class="mole"></div>
+        </div>
+        <div class="hole hole2">
+          <div class="mole"></div>
+        </div>
+        <div class="hole hole3">
+          <div class="mole"></div>
+        </div>
+        <div class="hole hole4">
+          <div class="mole"></div>
+        </div>
+        <div class="hole hole5">
+          <div class="mole"></div>
+        </div>
+        <div class="hole hole6">
+          <div class="mole"></div>
+        </div>
+      </div>
+
+      <script src="p3.js"></script>
+    </body>
+  </center>
+</html>
