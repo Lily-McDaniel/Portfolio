@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width+device-width">
+	<title>LAB 13</title>
+	<link rel="stylesheet" type="text/css" href="lb13.css">
+	<link rel="icon" type="image/png" href="FaviconL.png"> <!-- How to add a Favicon-->
+	<script src="lb13.js"></script>
+</head>
+<body>
+		<!-- header -->
+		<div id="header">
+			<!--Click to open nav bar-->
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+			<!--Slide bar with links to portfolio-->
+			 <div id="mySidenav" class="sidenav">
+			   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			   <a href="../../index_v3.html#top">Portfolio</a>
+			   <a href="../../index_v3.html#fProjects">Projects</a>
+			   <a href="../../index_v3.html#fLabs">Labs</a>
+			   <a href="../../index_v3.html#contact">Contact</a>
+			 </div>
+		<center>
+			<h1>Software Eng. Mirco-Credential</h1>
+			<h2>Boot Camp</h2>
+			<h3>Lifetime Supply Calculator</h3>
+			<h4>Feb 22, 2021</h4>
+			<h2>By Lily McDaniel</h2><br>
+		</center>
+    </div>
+			<br>
+			<br>
+		<center>
+		<div class="calculator">
+			<h3 class="question"> Hey! What's your food obsession?! Find out the quantity you'll need from now until you turn 100! </h3>
+			<h4> Fill in the gaps to the three questions: </h4>
+			<p> I am currently <input type="text" id="myAge" class="input" placeholder="age?" /> years old. </p>
+			<p> I am <b>OBSESSED</b> with <input type="text" id="item" class="input" placeholder="tea, cake, ice cream?" />. </p>
+			<p> Every day I always have <input type='text' id="myItem" class="input" placeholder="ex: 1, 2 or 3"/> per day. </p>
+			<input type="button" id="myButton" value="CALCULATE" onclick="calculateSupply()" />
+			<p> You will need to have <input type="text" id="leftXX" class="input" placeholder="let's find out!"/> to last you until the ripe old age of 100. That's a lot! </p>
+		</div>
+		<br>
+	</center>
+  </body>
+</html>
