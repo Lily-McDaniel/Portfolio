@@ -3,64 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" type="image/png" href="FaviconL.png"> <!-- How to add a Favicon-->
     <title>LAB 4</title>
-    <style>
-      body {
-        font-family: serif;
-        }
 
-      .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-        }
-
-      .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-        }
-
-      .sidenav a:hover {
-        color: #f1f1f1;
-        }
-
-      .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-        }
-
-      @media screen and (max-height: 450px) {
-        .sidenav {padding-top: 15px;}
-        .sidenav a {font-size: 18px;}
-        }
-    </style>
   </head>
-  <body style="background-color: ghostwhite">
-    <!--Click to open nav bar-->
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-    <!--Slide bar with links to portfolio-->
-     <div id="mySidenav" class="sidenav">
-       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-       <a href="../../index_v3.html#top">Portfolio</a>
-       <a href="../../index_v3.html#fProjects">Projects</a>
-       <a href="../../index_v3.html#fLabs">Labs</a>
-       <a href="../../index_v3.html#contact">Contact</a>
-     </div>
+  <body>
     <center>
   <!-- From rows 12 to 17 are headings-->
    <h1>CUNY QCC Software Eng. Micro-Credential Cohort 2</h1>
@@ -68,16 +14,16 @@
    <h3>Ordered and Unordered Lists & Tables</h3>
    <h4>Date</h4>
    <h5>by</h5>
-   <h2>Lily McDaniel</h2>
+   <h6>Lily McDaniel</h6>
 <p>
-
+  <!--How to insert a link with words on words-->
+<a href="https://www.linkedin.com/in/lily-mcdaniel-672a1910b/">Connect with me!</a><br>
 <!--How to make an image a link to a destination--> <br>
 <a href="https://www.linkedin.com/in/lily-mcdaniel-672a1910b/"> <img src="../lb2/Me.jpg" alt="me" width="200px"></a><br>
 </p>
 <center>
-  <!-- Row 26 is to make a table-->
   <table style="width:70%" border="2px">
-    <thead>List Types</thead>
+    <thead>List</thead>
       <th>Ordered Lists</th>
       <th>Unordered Lists</th>
       <tr>
@@ -86,7 +32,6 @@
       </tr>
       <tr>
         <td>
-          <!-- Rows 37-41 creates an ordered list within the column-->
           <ol>
             <li>HTML</li>
             <li>CSS</li>
@@ -94,7 +39,6 @@
           </ol>
         </td>
         <td>
-          <!-- Rows 45-49 creates an unordered list within the column-->
           <ul>
             <li>Python</li>
             <li>C#</li>
@@ -166,17 +110,9 @@
         </td>
       </tr><br>
     </table>
-    <br>
-    <br>
+<br>
+      <a href="../index.html">Go Back Home</a>
+      <script src="script.js"></script>
     </center>
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-    </script>
   </body>
 </html>
