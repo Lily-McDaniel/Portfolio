@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="jQLib.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="FaviconL.png"> <!-- How to add a Favicon-->
+    <title>Lily's Portfolio</title>
+
+  </head>
+  <body>
+    <div class="p1">
+      <h1 id="top">Hi, I am Lily McDaniel.<br>
+      Welcome to my <mark><b>portfolio.</b></mark></h1>
+    <div class="topnav">
+      <a href="#get2me">About</a>
+      <a href="#techSkills">Skills</a>
+      <a href="#fProjects">Projects</a>
+      <a href="#fLabs">Labs</a>
+      <a href="#contact">Contact</a>
+      <!-- The social media icon bar -->
+      <a href="https://www.facebook.com/profile.php?id=100062959143454" class="facebook"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/?lang=en" class="twitter"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/lily-mcdaniel-672a1910b/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a>
+      <a href="https://www.instagram.com/lillianamcdaniel/" class="instagram"><i class="fa fa-instagram"></i></a>
+    </div>
+    <div class="page1">
+      <p id="phrase"><i>Excited</i> for new <b>adventures</b> and <mark style= "background-color: black;color:white;"><b>opportunities</b></mark> that allow me to make a <mark><i>positive</i> <b>digital</b></mark> <i>footprint</i> in some way.</p>
+      <img src="images/portrait.jpg" id="portrait" align="right">
+    </div>
+    <br><br>
+  </div>
+  <div class="p2">
+  <br><br>
+    <h2 id="get2me">Get to know <b>me</b></h2>
+      <p id="aboutme"> Hi everyone, my name is <mark>Lily McDaniel.</mark> I am originally from Portland, Oregon, but I moved to NYC to attend Baruch College. I am currently a senior majoring in Finance and minoring in Mathematics. I have recently become interested in making a career change to Software Engineering. Thus, I am really excited for the <i>100 hour Software Engineering Micro-Credential</i> and all the things that my cohort will learn <b>together!</b>
+        <br><br>
+
+      I am <b>extremely</b> proud of what I have been able to accomplish, as I have not had any <i>prior</i> experience. Please see my featured projects and labs below to take a look at what I have <b>learned</b> and been working on.</p>
+       <ul id="talents" style="list-style-type:none;">
+         <li>Finanical <mark style="background-color: black;color:white;">Modeling</mark></li><br>
+         <li>Renewable Energy Research</li><br>
+         <li><mark style="background-color: grey;color:white;">HTML, CSS, JavaScript, Python, etc.</mark></li><br>
+         <li><mark style="background-color: black;color:white;">Creative</mark> Content</li><br>
+         <li>Intellectual <mark style="background-color: grey;color:white;">Curiousity</mark></li><br>
+      </ul>
+      <br>
+      <br>
+      <center>
+        <form method="get" action="LilyMcDaniel_Resume_2021.pdf">
+          <button class="btn"><i class="fa fa-download"></i> Download Resume</button>
+        </form>
+      </center>
+    <br><br>
+    </div>
+  <div id="p3">
+    <h2 id="techSkills"> Technical <b>Skills</b></h2>
+      <div class="tSkills">
+        <p>HTML</p>
+          <div class="containerS">
+            <div class="skills html">80%</div>
+          </div>
+
+        <p>CSS</p>
+          <div class="containerS">
+            <div class="skills css">80%</div>
+          </div>
+
+        <p>JavaScript</p>
+          <div class="containerS">
+            <div class="skills js">50%</div>
+          </div>
+
+        <p>JQuery</p>
+          <div class="containerS">
+            <div class="skills jq">30%</div>
+          </div>
+
+        <p>Python</p>
+          <div class="containerS">
+            <div class="skills py">30%</div>
+          </div>
+    </div>
+  </div>
+  <div id="p4">
+    <h2 id="fProjects">Featured Projects</h2>
+    <!--want to make a clickable slide show instead of squares -->
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="images/P1.jpg" style="width:100%">
+      <div class="textS"><a href="Projects/P1/index_v3.html">Project 1: Favorite Artists</a></div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/P2.jpg" alt="COVID-19" style="width:100%">
+      <div class="textS"><a href="https://reversewebsite.rozienabadree.repl.co/">Project 2: Reverse Engineering</a></div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/P3.jpg" style="width:100%">
+      <div class="textS"><a href="Projects/P3/p3.html">Project 3: Whack-A-Mole</a></div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+   <div id="p5">
+    <h2 id="fLabs">Featured Labs</h2>
+  <div id="scrollable">
+    <table id="labs" width="100%">
+    <tr>
+      <th>
+        `<div class="zoom">
+          <div class="container">
+          <a href="Labs/lb1/lb1.html">
+            <img src="Labs/lb1/lb1.png" class="image">
+              <div class="overlay">
+                <div class="text">Lab 1</div>
+          </a>
+              </div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="zoom">
+          <div class="container">
+            <a href="Labs/lb2/lb2.html">
+              <img src="Labs/lb2/lb2.jpg" class="image">
+                <div class="overlay">
+                  <div class="text">Lab 2</div>
+            </a>
+                </div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="zoom">
+          <div class="container">
+            <a href="Labs/lb3/lb3.html">
+              <img src="Labs/lb3/lb3.jpg" class="image">
+                <div class="overlay">
+                  <div class="text">Lab 3</div>
+            </a>
+              </div>
+          </div>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <div class="zoom">
+          <div class="container">
+            <a href="Labs/lb4/lb4_v2.html">
+              <img src="Labs/lb4/lb4.jpg" class="image">
+                <div class="overlay">
+                  <div class="text">Lab 4</div>
+            </a>
+                </div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="zoom">
+          <div class="container">
+            <a href="Labs/lb5/lb5.html">
+              <img src="Labs/lb5/lb5.jpg" class="image">
+                <div class="overlay">
+                  <div class="text">Lab 5</div>
+            </a>
+                </div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="zoom">
+          <div class="container">
+            <a href="Labs/lb6/lb6.html">
+              <img src="Labs/lb6/lb6.jpg" class="image">
+                <div class="overlay">
+                  <div class="text">Lab 6</div>
+            </a>
+                </div>
+          </div>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <div class="zoom">
+          <div class="container">
+            <a href="Labs/lb7/lb7.html">
+              <img src="Labs/lb7/lb7.jpg" class="image">
+                <div class="overlay">
+                  <div class="text">Lab 7</div>
+            </a>
+                </div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="zoom">
+          <div class="container">
+            <a href="Labs/lb8/lb8_v2.html">
+              <img src="Labs/lb8/lb8.jpg" class="image">
+                <div class="overlay">
+                  <div class="text">Lab 8</div>
+            </a>
+                </div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="zoom">
+          <div class="container">
+            <a href="Labs/lb9/lb9.html">
+              <img src="Labs/lb9/lb9.jpg" class="image">
+                <div class="overlay">
+                  <div class="text">Lab 9</div>
+            </a>
+                </div>
+          </div>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <div class="zoom">
+          <div class="container">
+            <a href="Labs/lb10/lb10.html">
+              <img src="Labs/lb10/lb10.jpg" class="image">
+                <div class="overlay">
+                  <div class="text">Lab 10</div>
+            </a>
+                </div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="zoom">
+          <div class="container">
+            <a href="https://py3.codeskulptor.org/#user306_JLGxo0YtSFkUVsC.py">
+              <img src="Labs/lb11/lb11.jpg" class="image">
+                <div class="overlay">
+                  <div class="text">Lab 11</div>
+            </a>
+                </div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="zoom">
+          <div class="container">
+            <a href="Labs/lb12/lb12.html">
+              <img src="Labs/lb12/lb12.jpg" class="image">
+                <div class="overlay">
+                  <div class="text">Lab 12</div>
+            </a>
+                </div>
+          </div>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <div class="zoom">
+          <div class="container">
+            <a href="Labs/lb13/lb13.html">
+              <img src="Labs/lb13/lb13.jpg" class="image">
+                <div class="overlay">
+                  <div class="text">Lab 13</div>
+            </a>
+                </div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="zoom">
+          <div class="container">
+            <a href="Labs/lb14/lb14.html">
+              <img src="Labs/lb14/lb14.jpg" class="image">
+                <div class="overlay">
+                  <div class="text">Lab 14</div>
+            </a>
+                </div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="zoom">
+          <div class="container">
+            <a href="Labs/lb15/lb15.html">
+              <img src="Labs/lb15/lb15.jpg" class="image">
+                <div class="overlay">
+                  <div class="text">Lab 15</div>
+            </a>
+                </div>
+          </div>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <div class="zoom">
+          <div class="container">
+            <a href="Labs/lb16/lb16.html">
+              <img src="Labs/lb16/lb16.jpg" class="image">
+                <div class="overlay">
+                  <div class="text">Lab 16</div>
+            </a>
+                </div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="zoom">
+          <div class="container">
+            <a href="Labs/lb17/lb17.html">
+              <img src="Labs/lb17/lb17.jpg" class="image">
+                <div class="overlay">
+                  <div class="text">Lab 17</div>
+            </a>
+                </div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="zoom">
+          <div class="container">
+            <a href="Labs/lb18/lb18.html">
+              <img src="Labs/lb18/lb18.jpg" class="image">
+                <div class="overlay">
+                  <div class="text">Lab 18</div>
+            </a>
+                </div>
+          </div>
+        </div>
+      </th>
+    </tr>`
+  </table>
+  <br>
+  <br>
+</div>
+</div>
+  <!-- My Contact Section -->
+  <div id="contact">
+    <h1><mark><i>Keep</i></mark> in <b>Touch!</b></h1>
+      <form name="sentMessage" id="contactForm" novalidate>
+        <input type="text" id="name" class="form-control" placeholder="Name" required="required"><br><br>
+        <input type="email" id="email" class="form-control" placeholder="Email" required="required"><br><br>
+        <textarea name="message" id="message" class="form-control" rows="6" placeholder="Message" required ></textarea><br><br>
+      </form><br><br>
+      <button onclick="thankYou()" id="sendMessage" type="submit">Send Message</button><br><br>
+      <p id="thanks"></p>
+      <br>
+    <!-- The social media icon bar -->
+      <div class="bSocials">
+        <a href="https://www.facebook.com/profile.php?id=100062959143454" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/?lang=en" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/lily-mcdaniel-672a1910b/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a>
+        <a href="https://www.instagram.com/lillianamcdaniel/" class="instagram"><i class="fa fa-instagram"></i></a>
+        <br>
+        <br>
+      </div>
+        <a id="topb" href="#top">To the Top</a>
+    </div>
+    <footer>
+      <p> &copy; Lily McDaniel 2021</p>
+    </footer>
+      <script src="index.js"></script>
+    </body>
+  </html>
