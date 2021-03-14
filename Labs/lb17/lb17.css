@@ -1,0 +1,80 @@
+body {
+  background-color: ghostwhite;
+  font-family: serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  }
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  }
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  }
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  }
+#divv{
+width: 200px;
+height: 200px;
+position: relative; /* Box would not move with out being absolute or relative*/
+background-color: crimson;
+border-radius: 5px;
+text-align: center;
+}
+.animationArea{
+background-color: #D697FF;
+height: 600px;
+width: 100%;
+border: 2px solid #5C257F;
+}
+.btn-group1 button, .btn-group2 button {
+  background-color: #5C257F;
+  border: 1px solid grey;
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
+  font-family: serif;
+}
+.btn-group1 button:not (:last-child), .btn-group2 button:not (:last-child) {
+  border-right: none; /* Prevent double borders}*/
+}
+/*Clears floats*/
+.btn-group2:after{
+  content: "";
+  clear: both;
+  display: table;
+}
+/*hover color*/
+.btn-group1 button:hover,.btn-group2 button:hover{
+  background-color: #fff;
+  color: black;
+}

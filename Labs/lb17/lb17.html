@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LAB 17: JQuery Animation</title>
+  <link rel="stylesheet" type="text/css" href="lb16.css">
+  <script src="jQLib.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="lb17.css">
+  <link rel="icon" type="image/png" href="FaviconL.png">
+</head>
+  <body>
+    <!--Click to open nav bar-->
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+    <!--Slide bar with links to portfolio-->
+     <div id="mySidenav" class="sidenav">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <a href="../../index_v3.html#top">Portfolio</a>
+       <a href="../../index_v3.html#fProjects">Projects</a>
+       <a href="../../index_v3.html#fLabs">Labs</a>
+       <a href="../../index_v3.html#contact">Contact</a>
+     </div>
+    <center>
+      <br>
+        <h1>QCC/CUNY</h1>
+        <h2>Software Eng. Mirco-Credential</h2>
+        <h3>JQuery Animation</h3>
+        <h4>Lab 17</h4>
+        <h5>March 1st, 2021</h5>
+        <h2>Lily McDaniel</h2>
+      <br>
+        <div class="animationArea">
+          <br>
+        <table width="65%">
+          <tr>
+            <td align="center">
+              <p> Here, I will use JQuery to manipulate the animation of the box. Click the button to try it!</p>
+              <h4>Click the Buttons</h4>
+            </td>
+          </tr>
+        </table>
+        <div id="divv"></div>
+
+      </div>
+
+        <br>
+        <div class="btn-group1" style="width:100%">
+          <button class="buttonL" style="width:20%" onclick="moveL()">Move Left</button>
+          <button class="buttonR" style="width:20%" onclick="moveR()">Move Right</button>
+          <button class="buttonU" style="width:20%" onclick="moveL()">Move Up</button>
+          <button class="buttonD" style="width:20%" onclick="moveR()">Move Down</button>
+          <button  class="buttonOpa" style="width:20%" onclick="opa()">Change Opacity</button>
+        </div>
+        <div class="btn-group2" style="width:100%">
+          <button class="buttonCirc" style="width:20%"  onclick="cir()">Circle</button>
+          <button class="buttonSqua" style="width:20%" onclick="cir()">Square</button>
+          <button class="buttonSizS" style="width:20%" onclick="siz()">Smaller</button>
+          <button class="buttonSizL" style="width:20%" onclick="siz()">Larger</button>
+          <button class="buttonReset" style="width:20%" onclick="reset()">Reset</button>
+        </div>
+        <br>
+        <br>
+      <script src="lb17.js" charset="utf-8"></script>
+    </center>
+  </body>
+</html>
