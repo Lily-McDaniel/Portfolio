@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> LAB 18 </title>
+      <link rel="icon" type="image/png" href="FaviconL.png">
+      <link rel="stylesheet" type="text/css" href="lb18.css">
+  </head>
+<body>
+  <!--Click to open nav bar-->
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+  <!--Slide bar with links to portfolio-->
+   <div id="mySidenav" class="sidenav">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <a href="../../index_v3.html#top">Portfolio</a>
+     <a href="../../index_v3.html#fProjects">Projects</a>
+     <a href="../../index_v3.html#fLabs">Labs</a>
+     <a href="../../index_v3.html#contact">Contact</a>
+   </div>
+  <center>
+    <h1>QCC/CUNY</h1>
+    <h2>Software Eng. Mirco-Credential</h2>
+    <h3>HTML Forms</h3>
+    <h4>Lab 18</h4>
+    <h5>March 3rd, 2021</h5>
+    <h2>Lily McDaniel</h2>
+  </center>
+
+    <form class="demo" id="myform">
+      <label for="name">Name: </label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="jobDescription">Job Description: </label>
+      <input type="text" id="jobDescription" name="jobDescription"><br><br>
+      <label for="iDNumber">ID Number: </label>
+      <input type="text" id="iDNumber" name="iDNumber"><br><br>
+      <label for="phoneNumber">Phone Number: </label>
+      <input type="text" id="phoneNumber" name="phoneNumber"><br><br>
+      <button type="button" onclick="myFunction()">Submit</button>
+    </form><br>
+  <center>
+    <p></p>
+  </center>
+  <script src="lb18.js" charset="utf-8"></script>
+</body>
+</html>
