@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="FaviconL.png"> <!-- How to add a Favicon-->
+    <link href="lb3.css" rel="stylesheet" type="text/css" />
+    <title>LAB 3</title>
+
+  </head>
+  <body style="background-color: ghostwhite">
+    <!--Click to open nav bar-->
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+    <!--Slide bar with links to portfolio-->
+     <div id="mySidenav" class="sidenav">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <a href="../../index_v3.html#top">Portfolio</a>
+       <a href="../../index_v3.html#fProjects">Projects</a>
+       <a href="../../index_v3.html#fLabs">Labs</a>
+       <a href="../../index_v3.html#contact">Contact</a>
+     </div>
+    <center>
+       <h1>CUNY QCC Software Eng. Micro-Credential Cohort 2</h1>
+       <h2>Lab 3 Lists & Images with Hyperlinks</h2>
+       <h3>Ordered v. Unordered</h3>
+       <h4>Date</h4>
+       <h2>Lily McDaniel</h2><br>
+
+       <a href="https://www.linkedin.com/in/lily-mcdaniel-672a1910b/"> <img src="img/Me.jpg" alt="me" width="100px"></a>
+    </center>
+    <div id="container">
+        <ul style="list-style-position: inside"> My Main Goals
+          <li> To learn and create interesting projects with Python</li>
+          <li> Find a career that I really love and enjoy </li>
+          <li> Invest and save my money </li>
+        </ul>
+
+        <ol style="list-style-position: inside"> To Do List
+          <li> Go for a walk in the morning </li>
+          <li> Read the newsletter Morning Brew </li>
+          <li> Go grocery shopping </li>
+        </ol> <br>
+
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>
