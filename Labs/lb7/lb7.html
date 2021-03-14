@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="lb7.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="FaviconL.png"> <!-- How to add a Favicon-->
+    <title>LAB 7</title>
+<style>
+#inte{
+    color:hotpink;
+}
+</style>
+  </head>
+  <body bgcolor=ghostwhite>
+    <!--Click to open nav bar-->
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+    <!--Slide bar with links to portfolio-->
+     <div id="mySidenav" class="sidenav">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <a href="../../index_v3.html#top">Portfolio</a>
+       <a href="../../index_v3.html#fProjects">Projects</a>
+       <a href="../../index_v3.html#fLabs">Labs</a>
+       <a href="../../index_v3.html#contact">Contact</a>
+     </div>
+    <center>
+  <h1>CUNY QCC Software Eng. Micro-Credential Cohort 2</h1>
+  <h2>Lab 7</h2>
+  <h3>CSS inline, internal and external</h3>
+  <h4>February 12th, 2021</h4>
+  <h2>Lily McDaniel</h2>
+<!--Examples of different types of CSS-->
+    <h3 style="color:rgb(23,57,200)">CSS inline</h3>
+    <h3 id="inte">CSS internal</h3>
+    <h3 class="zoom">CSS external</h3>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
+    </center>
+  </body>
+</html>
