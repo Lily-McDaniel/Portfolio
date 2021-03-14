@@ -1,0 +1,135 @@
+/*boxmodel*/
+*{
+  box-sizing: border-box;
+
+}
+/*margin and padding*/
+body{
+  margin: 3px;
+  padding: 10px;
+/*guarantee that everything will show nicely */
+/*  height: 50%;
+  overflow: scroll ; */
+  overflow: scroll;
+  background-color: ghostwhite;
+}
+/*Style the header*/
+.header{
+  background-color: ghostwhite;
+  padding: 20px;
+  text-align: center;
+  background-image: url("template.jpg");
+}
+/*Style navigation bar*/
+.topnav{
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a{
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 10px 14px /*navigation bar padding h x w*/
+}
+/*how to change topnav when you hover mouse over it*/
+.topnav a:hover{
+  background-color: #ddd;
+  color: #000;
+}
+/*sub body gb*/
+.row{
+  background-color: ghostwhite;
+}
+/*clear floats after the columns */
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+/*create three equal columns that floats next to each other*/
+.column{
+  float: left;
+  width: 33.33%;
+  height: 50%;
+  padding: 15px;
+}
+/*responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px){
+  .column{
+    width:100%;
+  }
+}
+#opi{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  /*tells the opi to scale*/
+  /*transform: scale(2,3);
+  /*tells the opi how to move*/
+  /*transform: translate(200px,200px)scale(2,3) skewy(45deg) /*x scale, x skew, y skew, y scale, translation x,y*/
+  transform: matrix(-0.1,-0.3,0,8,-30,0);
+  /*tells the opi how to move*/
+  transition-duration: 5000ms;
+  }
+/*Style of paragraph 1*/
+#p1{
+  color: #457893;
+  /*make it move & rotate*/
+  animation-name: sample;
+  animation-duration: 5s;
+}
+#p2{
+  color: darkgreen;
+}
+#p3{
+  color: purple;
+
+}
+h1,h2,h3,h4,h5{
+  font-family: serif;
+  color-adjust: inherit;
+}
+/*side bar nav*/
+body {
+  font-family: serif;
+  }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  }
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  }
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  }
+
+@media screen and (max-height: 600px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  }
