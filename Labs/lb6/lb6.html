@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="FaviconL.png"> <!-- How to add a Favicon-->
+    <title>LAB 6</title>
+    <style>
+      p{
+        color: black;
+        text-align: left;
+        text-indent: 50px;
+        padding-left: 30%;
+        padding-right: 30%;
+      }
+      table{
+        color: black;
+        background-color: #f2f2f2;
+      }
+      /*css for side bar*/
+      body {
+        font-family: serif;
+        }
+
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+        }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+        }
+    </style>
+  </head>
+  <body bgcolor=ghostwhite>
+    <!--Click to open nav bar-->
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+    <!--Slide bar with links to portfolio-->
+     <div id="mySidenav" class="sidenav">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <a href="../../index_v3.html#top">Portfolio</a>
+       <a href="../../index_v3.html#fProjects">Projects</a>
+       <a href="../../index_v3.html#fLabs">Labs</a>
+       <a href="../../index_v3.html#contact">Contact</a>
+     </div>
+    <center>
+  <!-- From rows 12 to 17 are headings-->
+   <h1><font color="#150070">CUNY QCC Software Eng. Micro-Credential Cohort 2</h1>
+   <h2><font color="#345E22">Lab 6 </h2>
+   <h3><font color="#C541FA">Color Table</h3>
+   <h4><font color="#FFAA21">February 12th, 2021</h4>
+   <h2><font color="#E61300">Lily McDaniel</h2>
+
+  <p> A hexadecical or hex is a six-digit, three-byte hexadecical number used in HTML, CSS, SVG, and other computing applications to represent colors. The bytes represent the red, green, and blue components of the color. One byte represents a number in the range 00 to FF in hexadecical notation, or 0 to 255 in decimal notation.</p><br>
+  <table style="width:70%" border="2px">
+      <th>Color Name</th>
+      <th>Hexadecical (16)</th>
+      <th>RBG (0,255,0)</th>
+      <th>Hue</th>
+      <tr>
+        <td>Bright Red</td>
+        <td>#F5432E</td>
+        <td>rgb(245,67,46)</td>
+        <td bgcolor="#F5432E">
+      </tr>
+      <tr>
+        <td>Burst of Orange</td>
+        <td>#FFA41D</td>
+        <td>rgb(255,164,29)</td>
+        <td bgcolor="#FFA41D">
+      </tr>
+      <tr>
+        <td>Sunflower Yellow</td>
+        <td>#FFDB24</td>
+        <td>rgb(255,219,36)</td>
+        <td bgcolor="#FFDB24">
+      </tr>
+      <tr>
+        <td>Forest Green</td>
+        <td>#1F6600</td>
+        <td>rgb(31,102,0)</td>
+        <td bgcolor="#1F6600">
+      </tr>
+      <tr>
+        <td>Ocean Blue</td>
+        <td>#30589C</td>
+        <td>rgb(48,88,156)</td>
+        <td bgcolor="#30589C">
+      </tr>
+      <tr>
+        <td>Ultra Violet</td>
+        <td>#4A018F</td>
+        <td>rgb(74,1,143)</td>
+        <td bgcolor="#4A018F">
+      </tr>
+      <tr>
+        <td>Dark Grey</td>
+        <td>#545454</td>
+        <td>rgb(84,84,84)</td>
+        <td bgcolor="#545454">
+      </tr>
+      <tr>
+        <td>Black</td>
+        <td>#000000</td>
+        <td>rgb(0,0,0)</td>
+        <td bgcolor="#000000">
+      </tr>
+    </table>
+      <br>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
+    </center>
+  </body>
+</html>
