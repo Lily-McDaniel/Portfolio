@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width+device-width">
+	<title>LAB 12</title>
+	<!-- Library of css-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="icon" type="image/png" href="FaviconL.png"> <!-- How to add a Favicon-->
+	<link rel="stylesheet" type="text/css" href="lb12.css">
+</head>
+<body>
+		<!-- header -->
+    <div class="header">
+			<!--Click to open nav bar-->
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+			<!--Slide bar with links to portfolio-->
+			<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="../../index_v3.html#top">Portfolio</a>
+			  <a href="../../index_v3.html#fProjects">Projects</a>
+			  <a href="../../index_v3.html#fLabs">Labs</a>
+			  <a href="../../index_v3.html#contact">Contact</a>
+			</div>
+			<center>
+				<h1>QCC/CUNY</h1>
+				<h2>Software Eng. Mirco-Credential</h2>
+				<h3>Boot Camp</h3>
+				<h4>Lab 12</h4>
+				<h5>Feb 22, 2021</h5>
+				<h2>By Lily McDaniel</h2><br>
+			</center>
+    </div>
+    <!-- navigation bar -->
+    <div class="topnav">
+      <a
+      href="https://www.linkedin.com/in/lily-mcdaniel-672a1910b/">Lily's LinkedIn</a>
+      <a href="https://www.w3schools.com/">W3Schools</a>
+    </div><br>
+		<center>
+        <div class="row">
+          <div class="column">
+						<div id="formDiv">
+							<h3>Fortune</h3>
+				      <form id="form1">
+				        <label for="fname">Name</label><br>
+				        <input type="text" name="FirstName" id="fname" placeholder="ex: Lily" value=""/><br/><br/>
+				        <label for="numKids">Number of Children</label><br>
+				        <input type="text" name="NumOfChildren" placeholder="ex: 4" id="numKids" value=""/><br/><br/>
+				        <label for="idealLocale">Ideal Location</label><br>
+				        <input type="text" name="idealLocale" id="idealLocale" placeholder="ex: NYC" value=""/><br/><br/>
+				        <label for="idealPartner">Ideal Partner</label><br>
+				        <input type="text" name="idealPartner" id="idealPartner" placeholder="ex: Brad Pitt" value=""/><br/><br/>
+				      </form>
+				      <button onclick="getInfo()">Get Fortune</button><br>
+				      <h5 id="fortune"></h5>
+				    </div>
+          </div>
+          <div class="column">
+						<div id="formDiv">
+							<h3>Cylinder Volume</h3>
+				      <form id="form2">
+				        <!-- Creating input fields for radius and height -->
+				           <label for="radius">Radius</label>
+				           <input type="number" id="radius" placeholder="enter radius" value=""/><br><br>
+				           <label for="height">Height</label>
+				           <input type="number" id="height" placeholder="enter height" value=""/><br><br>
+				      </form>
+				      <button onclick="radius()">Calculate</button><br>
+				      <h5 id="radiusEq"></h5>
+				    </div>
+          </div>
+          <div class="column">
+						<div id="formDiv">
+				      <h3>Quadratic</h3>
+				      <form id="form3">
+				           <label for="A">A: </label>
+				           <input type="number" id="A" placeholder="ex: 5" value=""/> <br><br>
+				           <label for="B">B: </label>
+				           <input type="number" id="B" placeholder="ex: 6" value=""/> <br><br>
+				           <label for="C">C: </label>
+				           <input type="number" id="C" placeholder="ex: 1" value=""/> <br><br>
+				        </form>
+				        <button onclick="quadratic()">Calculate</button>
+				      	<h5 id="quadraticEq"></h5>
+						</div>
+          </div>
+        </div>
+    </center>
+			 	<script src="lb12.js"></script>
+    </div>
+  </body>
+</html>
