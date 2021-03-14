@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>LAB 5</title>
+    <link rel="icon" type="image/png" href="FaviconL.png"> <!-- How to add a Favicon-->
+    <style>
+      #textarea{
+        padding-left: 20%;
+        padding-right: 20%;
+      }
+      #p1{
+        text-indent: 50px;
+      }
+      p{
+        text-align: left;
+      }
+      /*css for side nav bar*/
+      body {
+        font-family: serif;
+        }
+
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+        }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+        }
+    </style>
+  </head>
+  <body bgcolor="ghostwhite">
+    <!--Click to open nav bar-->
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+    <!--Slide bar with links to portfolio-->
+     <div id="mySidenav" class="sidenav">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <a href="../../index_v3.html#top">Portfolio</a>
+       <a href="../../index_v3.html#fProjects">Projects</a>
+       <a href="../../index_v3.html#fLabs">Labs</a>
+       <a href="../../index_v3.html#contact">Contact</a>
+     </div>
+    <center>
+      <!-- From rows 12 to 17 are headings-->
+       <h1>CUNY QCC Software Eng. Micro-Credential Cohort 2</h1>
+       <h2>Lab 5</h2>
+       <h3>Nested Lists & Favicon</h3>
+       <h4>February 12th, 2021</h4>
+       <h2>Lily McDaniel</h2>
+<!--How to make an image a link to a destination-->
+<a href="https://www.linkedin.com/in/lily-mcdaniel-672a1910b/"> <img src="../lb2/Me.jpg" alt="me" width="200px"></a><br>
+</p>
+<br>
+  <table style="width:90%" border="8px" bgcolor=#DCBFEC>
+  <tr>
+      <th><font color="#176900">Favorite Foods</th> <!-- column titles-->
+      <th><font color="#B2009E">Favorite Movies</th> <!-- column titles-->
+      <th><font color="#371BF5">Favorite School Subjects</th> <!-- column titles-->
+      <th><font color="#F5470D">Least Favorite School Subjects</th>
+      <th><font color="#23A870">Favorite Music</th>
+      <th><font color="#A81374"> Grocery Shopping List</th>
+    </tr>
+      <td> <!-- Foods-->
+        <ul>
+          <li>Sweetgreen</li>
+          <li>Acai bowls</li>
+          <li>Carrot salads</li>
+        </ul>
+      </td>
+      <td> <!-- Movies-->
+        <ol>
+          <li>Shawnshank Redemption</li>
+          <li>Harry Potter</li>
+          <li>Inception</li>
+        </ol>
+      </td>
+      <td> <!-- Subjects-->
+        <ol type="A">
+        <li>Finance</li>
+          <ul type="square"> <!-- Sublist-->
+            <li>Interesting concepts</li>
+            <li>Learn about personal & corp. finance</li>
+            <li>Developes financial modeling skills</li>
+          </ul>
+        <li>Economics</li>
+          <ul type="disc"> <!-- Sublist-->
+            <li>Game theory</li>
+            <li>Supply & Demand</li>
+            <li>Numbers</li>
+          </ul>
+        <li>Mathematics</li>
+          <ul type="circle"> <!-- Sublist-->
+            <li>Quantitative</li>
+            <li>Numbers oriented</li>
+            <li>Usually a correct answer</li>
+          </ul>
+        </ol>
+      </td>
+      <td> <!-- Least Fav. Subjects-->
+        <ol type="a">
+          <li>English</li>
+            <ul>
+              <li>Lots of reading</li>
+              <li>Time consumming</li>
+              <li>Prefer other classes</li>
+            </ul>
+          <li>Political Science</li>
+            <ul type="square">
+              <li>xyz</li>
+              <li>xyz</li>
+              <li>xyz</li>
+            </ul>
+          <li>Writing</li>
+            <ul type="disc">
+              <li>xyz</li>
+              <li>xyz</li>
+              <li>xyz</li>
+            </ul>
+        </ol>
+      </td>
+      <td> <!-- Fav. Music-->
+        <ol type="I">
+          <li>Contemporary R&B</li>
+            <ol type="i"> <!-- 1st subset-->
+              <li>Alina Baraz</li>
+                <ul type="square"> <!-- 2nd subset-->
+                  <li>Fantasy</li>
+                  <li>To Me</li>
+                  <li>Yours</li>
+                </ul>
+              <li>H.E.R</li>
+                <ul type="square">
+                  <li>2</li>
+                  <li>Slide</li>
+                  <li>Best Part</li>
+                </ul>
+              </li>
+            </ol>
+          <li>Pop</li>
+          <ol type="i"> <!-- 1st subset-->
+            <li>The Weeknd</li>
+              <ul type="square"> <!-- 2nd subset-->
+                <li>Blinded by the Lights</li>
+                <li>Wicked Games</li>
+                <li>Call Out My Name</li>
+              </ul>
+            <li>Billie Eilish</li>
+              <ul type="square">
+                <li>Ocean Eyes</li>
+                <li>No Time to Die</li>
+                <li>Bad Guy</li>
+              </ul>
+            </li>
+          </ol>
+        </ul>
+        </ol>
+      </td>
+      <td> <!-- Grocery Shopping-->
+        <ul>
+          <li>Carrot Salad</li>
+            <ol>
+              <li>Carrots</li>
+              <li>Cilantro</li>
+              <li>Red peppers</li>
+            </ol>
+          <li>Pasta</li>
+            <ol>
+              <li>Rao's Aribiata Sauce</li>
+              <li>Pasta noodles</li>
+              <li>Garlic</li>
+            </ol>
+          <li>Steak</li>
+            <ol>
+              <li>8oz steak</li>
+              <li>Asparagus</li>
+              <li>Seasoning</li>
+            </ol>
+        </ul>
+      </td>
+    </table><br>
+
+    <h3>What is a Favicon?</h3>
+    <div id="textarea">
+    <p id="p1" style="text-align: left">
+      Favicon stands for favorite icon and is defined as an icon associated with a URL that is displayed on the tab. My Favicon is my first name's initial L. I used red and black because they are my favorite colors. Below is the binary code of the favicon, and below that is the actual image of the favicon.
+    </p>
+    <p>
+      0001 0000
+      0001 0000
+      0000 0110
+      110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000
+      110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000
+      110000 110000 110000 110000 110000 000000 000000 110000 110000 110000 110000 110000 110000 110000 110000 110000
+      110000 110000 110000 110000 110000 000000 000000 110000 110000 110000 110000 110000 110000 110000 110000 110000
+      110000 110000 110000 110000 110000 000000 000000 110000 110000 110000 110000 110000 110000 110000 110000 110000
+      110000 110000 110000 110000 110000 000000 000000 110000 110000 110000 110000 110000 110000 110000 110000 110000
+      110000 110000 110000 110000 110000 000000 000000 110000 110000 110000 110000 110000 110000 110000 110000 110000
+      110000 110000 110000 110000 110000 000000 000000 110000 110000 110000 110000 110000 110000 110000 110000 110000
+      110000 110000 110000 110000 110000 000000 000000 110000 110000 110000 110000 110000 110000 110000 110000 110000
+      110000 110000 110000 110000 110000 000000 000000 110000 110000 110000 110000 110000 110000 110000 110000 110000
+      110000 110000 110000 110000 110000 000000 000000 110000 110000 110000 110000 110000 110000 110000 110000 110000
+      110000 110000 110000 110000 110000 000000 000000 110000 110000 110000 110000 110000 110000 110000 110000 110000
+      110000 110000 110000 110000 110000 000000 000000 000000 000000 000000 000000 000000 110000 110000 110000 110000
+      110000 110000 110000 110000 110000 000000 000000 000000 000000 000000 000000 000000 110000 110000 110000 110000
+      110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000
+      110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000
+      110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000
+      110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000 110000</p>
+    </div>
+      <img src="FaviconL.png" alt="L Favicon" width="100px"></a>
+      <br><br>
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+        </script>
+    </center>
+  </body>
+</html>
