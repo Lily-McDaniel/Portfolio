@@ -1,0 +1,47 @@
+/*margin and padding*/
+body{
+  margin: 10px;
+  padding: 10px;
+  overflow: scroll;
+}
+/*Style the header*/
+.header{
+  padding: 15px;
+  background-image: url("../Record.jpeg");
+  background-size: cover;
+  text-align: center;
+  color: Purple;
+}
+#portrait {
+  padding: 15px;
+}
+#aboutme {
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-indent: 2em;
+  color: ghostwhite;
+  width: 400px;
+}
+.Contact{
+  display: table;
+  text-align: center;
+  width: 100%;
+  margin: 10px auto;
+  overflow: hidden;
+  background-color: Black;
+  background-color: Black;
+  color: ghostwhite;
+}
+.Contact a {
+  display: table-cell;
+  text-align: center;
+  width: 16%;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+}
+.Contact a:hover{
+  background-color: Purple;
+  color: ghostwhite;
+}

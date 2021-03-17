@@ -1,0 +1,98 @@
+
+/*Style the header*/
+* {
+  box-sizing: border-box;
+}
+.header{
+  padding: 15px;
+  background-image: url("../Record.jpeg");
+  background-size: cover;
+}
+h1,h2,h3,h4{
+  font-variant: small-caps;
+  font-style: oblique;
+  color: green;
+  text-align: center;
+}
+/* How to make the nav bar perfectly spaced*/
+.topnav{
+  display: table;
+  width: 100%;
+  margin: 10px auto;
+  overflow: hidden;
+  background-color: Black;
+}
+.topnav a {
+  display: table-cell;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+}
+/*how to change topnav when you hover mouse over it*/
+.topnav a:hover{
+  background-color: green;
+  color: white;
+}
+/*clear floats after the columns */
+.artists:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+/* trying to add text over pictures when hover*/
+.container {
+  float: left;
+  padding: 5px;
+  position: relative;
+  width: 33.33%;
+}
+/*Adding text & link on top of an image*/
+.image {
+  opacity: 1;
+  display: block;
+  width: 31.67%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+/*Position of text when hovering*/
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+/*link color*/
+a:link{
+  color: black;
+  text-decoration: none;
+}
+/*click link color*/
+a:active{
+  color: yellow;
+  text-decoration: none;
+}
+.concert{
+  width: 100%;
+  padding: 5px;
+}

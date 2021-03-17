@@ -1,0 +1,77 @@
+/*margin and padding*/
+body{
+  margin: 10px;
+  padding: 10px;
+  overflow: scroll;
+}
+/*Style the header*/
+.header{
+  padding: 15px;
+  background-image: url("../Record.jpeg");
+  background-size: cover;
+  text-align: center;
+  color: Orange;
+}
+/* How to make the nav bar perfectly spaced*/
+.topnav{
+  display: table;
+  width: 100%;
+  margin: 10px auto;
+  overflow: hidden;
+  background-color: Black;
+}
+.topnav a {
+  display: table-cell;
+  text-align: center;
+  width: 16%;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+}
+/*how to change topnav when you hover mouse over it*/
+.topnav a:hover{
+  background-color: Orange;
+  color: Black;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 10px; /* Some padding */
+  border: 3px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: inherit;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: Orange;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: grey;
+  color: black;
+}
+
+/* Add a background color and some padding around the form */
+.form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/* label formatting*/
+label{
+  color: Black;
+  font-family: inherit;
+  box-sizing: border-box;
+}

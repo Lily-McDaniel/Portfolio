@@ -1,0 +1,140 @@
+
+*{
+  box-sizing: border-box;
+}
+/*Style the header*/
+.header{
+  padding: 15px;
+  background-image: url("../../../Record.jpeg");
+  background-size: cover;
+}
+h1,h2,h3,h4{
+  font-variant: small-caps;
+  font-style: oblique;
+  color: #D6944D;
+  text-align: center;
+}
+.art_nav{
+  padding: 15px;
+  overflow: hidden;
+  background-color: black;
+  width: 100%;
+}
+.art_nav a{
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 10px; /*navigation bar padding h*/
+  text-decoration: none;
+  width: 33.33%;
+}
+/*drop down on nav bar*/
+.dropdown {
+  overflow: hidden;
+  text-align: center;
+}
+/* drop down button modifications*/
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+/*nav bar design elements with hover*/
+.art_nav a:hover {
+  background-color: yellow;
+  color: black;
+  width: 33.33%;
+}
+.dropdown:hover .dropbtn, .dropdown a:hover {
+  background-color: yellow;
+  color: black;
+  width: 100%;
+}
+/*what the drop down content looks like*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  z-index: 1;
+}
+/*action of the drop down content*/
+.dropdown-content a {
+  float: none;
+  color: black;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+/*appearence of the drop down content when hovering*/
+.dropdown-content a:hover {
+  background-color: #ddd;
+  width: 100%;
+}
+/*dropdown format*/
+.dropdown:hover .dropdown-content {
+  display: block;
+  width: 33.33%;
+}
+/* laying text over an image when hovering -Start*/
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 350px;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #D6944D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+a:link{
+  text-decoration: none;
+}
+/*click link color*/
+a:active{
+  color: purple;
+  text-decoration: none;
+}
+/* laying text over an image when hovering -end*/
+
+/* edit the color of table*/
+table, tr, td{
+  color: black;
+  background-color: #D6944D;
+}
